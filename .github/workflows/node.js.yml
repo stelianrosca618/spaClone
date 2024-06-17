@@ -30,8 +30,8 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-      - name: deploy to main
-        uses: stelianrosca618
+      - name: deploy to spaClone
+        uses: stelianrosca618/actions-spaClone@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build   
