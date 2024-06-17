@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme, styled, Box, Typography, Switch, FormControlLabel, Grid } from "@mui/material";
-// import GaugeComponent from 'react-gauge-component'
-// import GaugeChart from 'react-gauge-chart'
+
 import { tokens } from "../../theme";
 
 
@@ -210,53 +209,7 @@ export const StatusBoards = () => {
               backgroundColor={colors.primary[400]}
               height={{ height: 'fit-content' }}
             >
-              {/* <GaugeComponent
-                type="semicircle"
-                arc={{
-                  width: 0.1,
-                  padding: 0.01,
-                  cornerRadius: 10,
-                  // gradient: true,
-                  subArcs: [
-                    {
-                      limit: 20,
-                      color: '#EA4228',
-                      showTick: true,
-                      tooltip: {
-                        text: 'Too low temperature!'
-                      },
-                      onClick: () => console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"),
-                      onMouseMove: () => console.log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"),
-                      onMouseLeave: () => console.log("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"),
-                    },
-                    {
-                      limit: 60,
-                      color: '#F5CD19',
-                      showTick: true,
-                      tooltip: {
-                        text: 'Low temperature!'
-                      }
-                    },
-                    {
-                      color: '#EA4228',
-                      tooltip: {
-                        text: 'Too high temperature!'
-                      }
-                    }
-                  ]
-                }}
-                pointer={{
-                  color: '#345243',
-                  length: 0.80,
-                  width: 15,
-                  // elastic: true,
-                }}
 
-                value={50}
-                minValue={0}
-                maxValue={100}
-              /> */}
-              {/* <GaugeChart id="gauge-chart1" /> */}
             </Box>
           </Grid>
           <Grid item md="4" xs="12">
