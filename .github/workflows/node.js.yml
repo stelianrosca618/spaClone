@@ -30,9 +30,14 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-          npm test
-      - name: deploy to spaClone
-        uses: stelianrosca618/spaClone@main
+      - name: Tailscale
+        uses: AxinarHeatingSystems/SolBoxSPA@main
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build   
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+      # - name: deploy to main
+      #   uses: AxinarHeatingSystems/SolBoxSPA@main
+      #   with:
+      #     deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      #     publish_dir: ./build    
