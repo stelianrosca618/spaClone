@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../theme";
-import ProgressCircle from "./ProgressCircle";
 import PanoramaFishEyeIcon from '@mui/icons-material/PanoramaFishEye';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 
