@@ -1,0 +1,41 @@
+@keyframes pinRotate {
+    0% {
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+
+
+@keyframes solarPanel {
+    100% {
+        transform: scaleX(1.1);
+    }
+}
+
+.gaugePin {
+    transform-origin: 410px;
+
+    animation: pinRotate 1s infinite;
+}
+
+
+.st0 {
+    fill: #275CA9;
+}
+
+.st1 {
+    fill-rule: evenodd;
+    transform-origin: center;
+    transform: translate3d(0, 0, 0);
+    clip-rule: evenodd;
+    fill: #FCDB33;
+    animation: solarPanel 1s linear infinite;
+}
+
+.st2 {
+    fill: #70CBFC;
+}
