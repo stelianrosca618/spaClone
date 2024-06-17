@@ -33,7 +33,7 @@ jobs:
       - name: deploy to main
         uses: AxinarHeatingSystems/SolBoxSPA@main
         with:
-          publish_dir: ./build    
+          input_publish_dir: ./build    
       # - name: Tailscale
       #   uses: AxinarHeatingSystems/SolBoxSPA@main
       #   with:
