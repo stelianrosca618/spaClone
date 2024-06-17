@@ -30,7 +30,6 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-          npm start      
       - name: deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
